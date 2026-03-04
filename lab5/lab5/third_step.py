@@ -74,7 +74,7 @@ class colourIdentifier(Node):
                 (x, y), radius = cv2.minEnclosingCircle(c)
                 center_x, center_y = int(x), int(y)
                 radius = int(radius)
-
+                # Note the circle is being put on the image
                 cv2.circle(image, (center_x, center_y), radius, (0, 255, 0), 2)
                 cv2.circle(image, (center_x, center_y), 3, (0, 255, 0), -1)
 
